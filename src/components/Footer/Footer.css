@@ -1,0 +1,235 @@
+.footer-container-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    width: 1600px;
+    height: 495px;
+    background-color: #102A4D;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 90px;
+    margin-top: 67px;
+}
+
+.footer-logo{
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.footer-sign-wrap{
+    position: relative;
+}
+
+.footer-sign-title{
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.footer-sign-input{
+    width: 412px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    background: unset;
+    padding-left: 32px;
+    border-radius: 36px;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.footer-sign-button{
+    position: absolute;
+    transform: translateY(-50%);
+    padding: 14px 16px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #6a82fb, #fc5c7d);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    right: 20px;
+    top: 70px;
+}
+
+.footer-2{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.footer-tag-1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 112px;
+    margin-left: 70px;
+
+}
+
+
+.title-tag{
+    all:unset;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.footer-tag{
+    all:unset;
+    font-family: "Inter";
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.footer-tag-3{
+    margin-top:112px ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.contact-title{
+    all: unset;
+    font-family: "Inter";
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.footer-contact{
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.contact-title{
+    width: 80px;
+    margin-right: 27px;
+}
+
+.contact-content{
+    all:unset;
+    font-family: "Inter";
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 319px;
+    cursor: pointer;
+}
+
+@media(max-width:1598.99px){
+    .footer-container{
+        width: 1200px;
+        height: 495px;
+        background-color: #102A4D;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-1 {
+        margin-left: 20px;
+    }
+    .footer-sign-input {
+        width: 340px;
+    }
+    .footer-tag-3 {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:1198.99px){
+        .footer-container{
+            width: 600px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+        }
+    .footer-1 {
+        margin: 0;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer-logo{
+        margin-bottom: 26px;
+    }
+    .footer-sign-wrap{
+        width: 100%;
+    }
+    .footer-sign-input{
+        width: 100%;
+    }
+
+    .footer-2 {
+        margin-top: 32px;
+        margin-left: 10px;
+        gap: 63px;
+    }
+    .footer-tag-1 {
+        margin: 0;
+    }
+    .footer-3 {
+        margin-top: 32px;
+        margin-left: 10px;
+        gap: 63px;
+    }
+    .footer-tag-3{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-tag-address{
+        display: none;
+    }
+    .email-phone-wrap{
+        display: flex;
+    }
+    .footer-contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-title{
+        margin-bottom: 6px;
+    }
+    .contact-content {
+        font-size: 16px;
+        width: 319px;
+        line-height: 26px;
+}
+}
+
+@media(max-width:599.99px){
+    .footer-container {
+        width: 374px;
+        height: 700px;
+    }
+    .contact-content {
+        font-size: 9px;
+        width: 180px;
+        line-height: 14px;
+        cursor: pointer;
+    }
+    .footer-tag{
+        font-size: 9px;
+    }
+    .title-tag{
+        font-size: 10px;
+    }
+}
