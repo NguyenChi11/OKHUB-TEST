@@ -46,7 +46,9 @@ const NewsSection = () => {
             <img className='News-arr-left' src={assets.arr_left} alt=""  onClick={handlePrev}/>
             <div className='News-items'>{visibleItems.map((item,index)=>(
               <div className='News-item' key={index}>
-                <img src={item.image} className='News-item-image' alt="" />
+                <div className='News-item-image-wrap'>
+                  <img src={item.image} className='News-item-image' alt="" />
+                </div>
                 <div className='News-title-content-wrap'>
                   <h3 className='News-item-title'>{item.title}</h3>
                   <p className='News-item-date'>{item.date}</p>

@@ -29,8 +29,8 @@ const Slider = () => {
             </div>
         </div>
       </div>
-      <div className='slider-image-list'>
-        <img className='slider-image' src={assets.image_slider} alt="" />
+      <div className='video-container'>
+        <iframe className='video-container-iframe' src="https://www.youtube.com/embed/t7RSJ9rOILU?loop=1&showinfo=0&autohide=1&modestbranding=1&frameborder=0&enablejsapi=1&playlist=t7RSJ9rOILU&rel=0" frameborder="0"></iframe>
       </div>
     </div>
   )

@@ -26,15 +26,17 @@ import icon_item_2 from "./icon-item2.png"
 import icon_item_3 from "./icon-item3.png"
 import icon_item_4 from "./icon-item4.png"
 import icon_item_5 from "./icon-item5.png"
-import icon_item_6 from "./icon-item6.png"
-import icon_item_7 from "./icon-item7.png"
-import icon_item_8 from "./icon-item8.png"
+import icon_item_6 from "./Doi-tac_RMA.webp"
+import icon_item_7 from "./Doi-tac_RMA.webp"
+import icon_item_8 from "./Faros.webp"
+import icon_item_9 from "./Doi-tac_Base.webp"
 import banner_1 from "./banner1.png"
 import layout_banner from "./layout.png"
 import bgr_cooperate from "./bgr-cooperate.png"
 import cooperate1 from "./cooperate1.png"
-import cooperate2 from "./IMG_0875.JPG"
-import cooperate3 from "./IMG_0878.JPG"
+import cooperate2 from "./cooperate2.png"
+import cooperate3 from "./cooperate3.png"
+import cooperate4 from "./cooperate4.png"
 import slider_1 from "./slider1.png"
 import slider_2 from "./slider2.png"
 import slider_3 from "./slider3.png"
@@ -79,10 +81,17 @@ export const characters =[
     },
     {
         name:"TS.NGUYỄN VĂN B",
-        content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit velit minima architecto corporis. Corrupti iusto quas ipsa dolor totam autem debitis dicta veniam ipsam nobis mollitia nemo animi, et nam.",
+        content: "Hành trình hợp tác của Ami&M và RMA hướng tới việc phát triển và làm mới thương hiệu Ami&M với chiến lược hình ảnh mới mẻ và bám sát tinh thần của Tập đoàn ở thời điểm hiện tại. Trong quá trình làm việc, tôi thấy được tinh thần kiên định và chuyên nghiệp của đội ngũ Ami&M. Tôi phải nói rằng sự hợp tác công việc của chúng ta thật “khó khăn” và tuyệt vời. “Khó khăn” bởi vì không hề có giới hạn về lượng thông tin mà Ami&M cung cấp cho chúng tôi, cũng như không giới hạn lượng thời gian chia sẻ mà các bạn dành cho chúng tôi. Tuyệt vời bởi từ những chia sẻ của các bạn, chúng tôi học được cách để hình thành và chia sẻ những ý tưởng. Chúng tôi nhận thấy Ami&M có thái độ làm việc rất cởi mở và sẵn sàng kết hợp các ý tưởng của chúng tôi với ý tưởng nội bộ của các bạn. Trong suốt các cuộc thảo luận sôi nổi giữa chúng ta, tôi cảm nhận rõ ràng năng lượng và tinh thần đáng ngưỡng mộ của việc “Làm thế nào để tốt hơn?” – một tinh thần luôn hướng tới điều tốt nhất trong từng bước đi.				",
         image: cooperate3,
         regency:"Phó trưởng Khoa Ngân hàng",
         imageIcon: icon_item_8
+    },
+        {
+        name:"TS.NGUYỄN VĂN B",
+        content: "Hành trình hợp tác của Ami&M và RMA hướng tới việc phát triển và làm mới thương hiệu Ami&M với chiến lược hình ảnh mới mẻ và bám sát tinh thần của Tập đoàn ở thời điểm hiện tại. Trong quá trình làm việc, tôi thấy được tinh thần kiên định và chuyên nghiệp của đội ngũ Ami&M. Tôi phải nói rằng sự hợp tác công việc của chúng ta thật “khó khăn” và tuyệt vời. “Khó khăn” bởi vì không hề có giới hạn về lượng thông tin mà Ami&M cung cấp cho chúng tôi, cũng như không giới hạn lượng thời gian chia sẻ mà các bạn dành cho chúng tôi. Tuyệt vời bởi từ những chia sẻ của các bạn, chúng tôi học được cách để hình thành và chia sẻ những ý tưởng. Chúng tôi nhận thấy Ami&M có thái độ làm việc rất cởi mở và sẵn sàng kết hợp các ý tưởng của chúng tôi với ý tưởng nội bộ của các bạn. Trong suốt các cuộc thảo luận sôi nổi giữa chúng ta, tôi cảm nhận rõ ràng năng lượng và tinh thần đáng ngưỡng mộ của việc “Làm thế nào để tốt hơn?” – một tinh thần luôn hướng tới điều tốt nhất trong từng bước đi.",
+        image: cooperate4,
+        regency:"Phó trưởng Khoa Ngân hàng",
+        imageIcon: icon_item_9
     }
 ]
 

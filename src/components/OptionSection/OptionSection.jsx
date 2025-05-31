@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./OptionSection.css"
 import { assets } from '../../assets/assets'
+import { optionItem } from '../../assets/option'
 
 const OptionSection = () => {
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
+  const handleClick = (index) => {
+    setSelectedIndex(index);
+  };
+
+  const selectedItem = optionItem.find(
+    (item, idx) => (item.index) === selectedIndex
+  )||optionItem[1]
+
   return (
     <div className='option-section-wrap'>
         <div className='option-section-container'>
@@ -28,7 +39,55 @@ const OptionSection = () => {
                 </div>
             </div>
             <div className='option-section-right'>
-                <img className='option-background-right' src={assets.background_right} alt="" />
+              {optionItem.map((item,idx)=>(
+                <div key={idx} className='option-section-right-item' onClick={() => handleClick(item.index)}>
+                  <div className={`option-right-item_${item.index}`}>
+                    <img src={item.image_layer} alt="" />
+                  </div>
+                </div>
+              ))}
+              <div className='option  -section-info'>
+               {selectedItem ? (
+                <div className='option-section-info-wrap'>
+                <img className='option-background-right' src={selectedItem.image_option} alt="" />
+                <img className='option-img-right' src={assets.ellip_right} alt="" />
+                <div className='option-section-content-right'>
+                  <img className='option-section-logo' src={selectedItem.image_layer} alt="" />
+                  <p className='option-section-title-right'>{selectedItem.title}</p>
+                  <button className='option-button-right'>
+                    Tìm hiểu thêm
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                </div>
+                ) : (
+                <div className='option-section-info-wrap'>
+                  <img
+                    className='option-background-right'
+                    src={selectedItem.image_option}
+                    alt=""
+                  />
+                  <img className='option-img-right' src={assets.ellip_right} alt="" />
+                  <div className='option-section-content-right'>
+                    <img
+                      className='option-section-logo'
+                      src={selectedItem.image_layer}
+                      alt=""
+                    />
+                    <p className='option-section-title-right'>{selectedItem.title}</p>
+                    <button className='option-button-right'>
+                      Tìm hiểu thêm
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+              )}
+              </div>
+
+              </div>
+
+                {/* <img className='option-background-right' src={assets.background_right} alt="" />
                 <img className='option-img-right' src={assets.ellip_right} alt="" />
                 <img className='option-img-rep' src={assets.option_rep} alt="" />
                 <div className='option-section-content-right'>
@@ -55,10 +114,9 @@ const OptionSection = () => {
                 </div>
                 <div className='option-right-item_5'>
                   <img src={assets.layer_5} alt="" />
-                </div>
+                </div> */}
             </div>
         </div>
-    </div>
   )
 }
 

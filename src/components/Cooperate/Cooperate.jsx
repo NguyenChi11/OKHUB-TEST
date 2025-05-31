@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import "./Cooperate.css"
 import { assets } from '../../assets/assets'
 import { characters } from '../../assets/assets'
@@ -11,7 +11,12 @@ import { characters } from '../../assets/assets'
         const handleChange = (event) => {
             const character = characters.find(char => char.name === event.target.value);
             setSelectedCharacter(character);
-    };
+        };
+
+        const [isZoomed, setIsZoomed] = useState(null)
+        const handleClick = (index)=>{
+            setIsZoomed(isZoomed === index ? null :index)
+        }
 
 
         return (
@@ -32,9 +37,11 @@ import { characters } from '../../assets/assets'
                         <p className='cooperate-title'>{selectedCharacter.content}</p>
                         <p className='cooperate-name'>{selectedCharacter.name}</p>
                         <p className='cooperate-regency'>{selectedCharacter.regency}</p>
-                        <div className='cooperate-image-icon-list'>
-                            {characters.map((item)=>(
-                                <img key={item.name} value={item.name}  className='image-icon-item' src={item.imageIcon} onClick={() => setSelectedCharacter(item)} alt="" />
+                        <div className='cooperate-button-wrap'>
+                            {characters.map((item,index)=>(
+                                <button key={index} className={`cooperate-image-icon-list ${isZoomed === index ? 'item-container-active':''}`}  onClick={() => handleClick(index)}>
+                                    <img value={item.name}  className='image-icon-item' src={item.imageIcon} onClick={() => setSelectedCharacter(item)} alt="" />
+                                </button>
                             ))}
                         </div>
                     </div>
