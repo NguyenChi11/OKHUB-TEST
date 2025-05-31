@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OKHUB-TEST/static/css/main.ddc33808.css",
-    "main.js": "/OKHUB-TEST/static/js/main.d947d2c2.js",
+    "main.css": "/OKHUB-TEST/static/css/main.81993bcd.css",
+    "main.js": "/OKHUB-TEST/static/js/main.96db989a.js",
     "static/js/453.8ab44547.chunk.js": "/OKHUB-TEST/static/js/453.8ab44547.chunk.js",
     "static/media/image-slide.png": "/OKHUB-TEST/static/media/image-slide.b198506356f09122dd3f.png",
     "static/media/IMG_0875.JPG": "/OKHUB-TEST/static/media/IMG_0875.e0ebb3ac663bb94417d5.JPG",
@@ -9,11 +9,15 @@
     "static/media/banner.png": "/OKHUB-TEST/static/media/banner.d5f89bb9e4915215ce34.png",
     "static/media/banner1.png": "/OKHUB-TEST/static/media/banner1.984fdc729cf7e41e4068.png",
     "static/media/BannerEnd.png": "/OKHUB-TEST/static/media/BannerEnd.7be92085787c503bb057.png",
+    "static/media/option-image-4.webp": "/OKHUB-TEST/static/media/option-image-4.04e8f8b0ba8d000221ae.webp",
     "static/media/cooperate1.png": "/OKHUB-TEST/static/media/cooperate1.166d67a638e224b3121b.png",
     "static/media/AboutSection.png": "/OKHUB-TEST/static/media/AboutSection.7d1363f3de81e9d4bb67.png",
     "static/media/img-option-left.png": "/OKHUB-TEST/static/media/img-option-left.bac9926406f3026a091a.png",
+    "static/media/cooperate3.png": "/OKHUB-TEST/static/media/cooperate3.b80ae3f7aeb880f8e821.png",
+    "static/media/cooperate4.png": "/OKHUB-TEST/static/media/cooperate4.1fa0c8be9284e0f819b3.png",
     "static/media/backgroud-option-left.png": "/OKHUB-TEST/static/media/backgroud-option-left.37b54facc4f3e083709f.png",
     "static/media/backgroud-option-right.png": "/OKHUB-TEST/static/media/backgroud-option-right.532f39a5559a32af15f5.png",
+    "static/media/cooperate2.png": "/OKHUB-TEST/static/media/cooperate2.dbfdc7d285c98387989e.png",
     "static/media/layout.png": "/OKHUB-TEST/static/media/layout.42e01c7a34f50fc15f34.png",
     "static/media/item.png": "/OKHUB-TEST/static/media/item.01210ab38f2fffac4d8f.png",
     "static/media/AboutSection-rep.png": "/OKHUB-TEST/static/media/AboutSection-rep.4e69162f48737f282eec.png",
@@ -27,15 +31,21 @@
     "static/media/Fame-1.png": "/OKHUB-TEST/static/media/Fame-1.6ddefa5c8b2ea393865b.png",
     "static/media/backgroundBannerEnd.png": "/OKHUB-TEST/static/media/backgroundBannerEnd.81147b8cace5b0a1c68f.png",
     "static/media/Union.png": "/OKHUB-TEST/static/media/Union.debada3ff33c48687812.png",
+    "static/media/option-image-3.webp": "/OKHUB-TEST/static/media/option-image-3.e6499f2c919740e087b3.webp",
+    "static/media/option-image-5.webp": "/OKHUB-TEST/static/media/option-image-5.2be36e87febcfd37fe96.webp",
+    "static/media/option-image-2.webp": "/OKHUB-TEST/static/media/option-image-2.6cdc65968fbd0ba24d02.webp",
+    "static/media/Faros.webp": "/OKHUB-TEST/static/media/Faros.9a2439845050d70e6b97.webp",
+    "static/media/option-image-1.webp": "/OKHUB-TEST/static/media/option-image-1.1a5f27a4ab320eaf1e2d.webp",
+    "static/media/Doi-tac_Base.webp": "/OKHUB-TEST/static/media/Doi-tac_Base.17a9c8eee6e65139427b.webp",
     "static/media/Fame-2.png": "/OKHUB-TEST/static/media/Fame-2.22c2f14582340250dad1.png",
-    "static/media/icon-item6.png": "/OKHUB-TEST/static/media/icon-item6.858261e766af819f461c.png",
+    "static/media/Doi-tac_RMA.webp": "/OKHUB-TEST/static/media/Doi-tac_RMA.1e12b7441c1d4e9e9b07.webp",
     "index.html": "/OKHUB-TEST/index.html",
-    "main.ddc33808.css.map": "/OKHUB-TEST/static/css/main.ddc33808.css.map",
-    "main.d947d2c2.js.map": "/OKHUB-TEST/static/js/main.d947d2c2.js.map",
+    "main.81993bcd.css.map": "/OKHUB-TEST/static/css/main.81993bcd.css.map",
+    "main.96db989a.js.map": "/OKHUB-TEST/static/js/main.96db989a.js.map",
     "453.8ab44547.chunk.js.map": "/OKHUB-TEST/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddc33808.css",
-    "static/js/main.d947d2c2.js"
+    "static/css/main.81993bcd.css",
+    "static/js/main.96db989a.js"
   ]
 }
