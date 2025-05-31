@@ -1,10 +1,20 @@
 import React from 'react'
 import "./Mission.css";
 import { assets } from '../../assets/assets';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Mission = () => {
+  useEffect(() => {
+            AOS.init({
+              duration: 1000,  
+              once: true,     
+            });
+          }, []);
   return (
-    <div className='mission-container'>
+    <div className='mission-container' data-aos="fade-up"
+     data-aos-duration="3000">
       <div className='mission-union'>
         <img className='img-union' src={assets.Union} alt="" />
       </div>

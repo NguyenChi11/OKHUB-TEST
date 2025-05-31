@@ -2,9 +2,22 @@ import React from 'react'
 import "./Footer.css"
 import { assets } from '../../assets/assets'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const Footer = () => {
+
+          useEffect(() => {
+              AOS.init({
+                duration: 1000,  
+                once: true,     
+              });
+            }, []);
   return (
-    <div className='footer-container-wrap'>
+    <div className='footer-container-wrap' data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <div className='footer-container'>
         <div className='footer-1'>
             <img className='footer-logo' src={assets.footerlogo} alt="" />

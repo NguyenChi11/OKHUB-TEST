@@ -2,8 +2,21 @@ import React, { useState } from 'react';
 import "./OptionSection.css"
 import { assets } from '../../assets/assets'
 import { optionItem } from '../../assets/option'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 const OptionSection = () => {
+
+  useEffect(() => {
+            AOS.init({
+              duration: 1000,  
+              once: true,     
+            });
+          }, []);
+
+          
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const handleClick = (index) => {
@@ -15,7 +28,9 @@ const OptionSection = () => {
   )||optionItem[1]
 
   return (
-    <div className='option-section-wrap'>
+    <div className='option-section-wrap' data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <div className='option-section-container'>
             <div className='option-section-left'>
                 <img className='option-background-left' src={assets.background_left} alt="" />

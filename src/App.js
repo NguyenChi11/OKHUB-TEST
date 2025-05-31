@@ -11,11 +11,24 @@ import SingleBanner from './components/SingleBanner/SingleBanner';
 import Slider from './components/Slider/Slider';
 import Succeed from './components/Succeed/Succeed';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 function App() {
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // thời gian animation (ms)
+      once: true,      // chỉ animate 1 lần (khi scroll lại không lặp)
+    });
+  }, []);
+
   return (
     <div className="App">
-      <Banner/>
-      <AboutSection/>
+      <Banner />
+      <AboutSection />
       <GlobalSection/>
       <Mission/>
       <OptionSection/>

@@ -2,9 +2,21 @@ import React from 'react';
 import "./AboutSection.css";
 import { assets } from '../../assets/assets';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const AboutSection = () => {
+
+      useEffect(() => {
+          AOS.init({
+            duration: 1000,  
+            once: true,     
+          });
+        }, []);
+  
   return (
-    <div className='about-section'>
+    <div className='about-section' data-aos="zoom-in-down">
       <div className='about-section-img'>
           <div className='circle-red'></div>
           <div className='circle-green'></div>

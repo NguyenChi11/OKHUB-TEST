@@ -1,10 +1,21 @@
 import React from 'react'
 import "./Succeed.css"
 import { assets } from '../../assets/assets'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Succeed = () => {
+      useEffect(() => {
+            AOS.init({
+              duration: 1000,  
+              once: true,     
+            });
+          }, []);
   return (
-    <div className='succeed-container'>
+    <div className='succeed-container' data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
       <div className='succeed-container-left'>
         <div className='succeed-title-heading'>
           <div className='succeed-circle'></div>

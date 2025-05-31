@@ -1,10 +1,21 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import "./Slider.css"
 import { assets } from '../../assets/assets'
 import { sliderList } from '../../assets/assets';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 const Slider = () => {
+
+        useEffect(() => {
+            AOS.init({
+              duration: 1000,  
+              once: true,     
+            });
+          }, []);
   
     return (
     

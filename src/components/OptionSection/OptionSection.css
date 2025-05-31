@@ -266,23 +266,62 @@ top: 570px;
         font-size: 18px;
         line-height: 24px;
     }
+    .option-background-right{
+        top: 20px;
+        right: -20px;
+    }
+    .option-img-right {
+    top: 20px;
+    right: 160px;
+    }
+
+    .option-right-item_1 {
+        left: -240px;
+        top: 180px;
+    }
+    .option-right-item_5{
+        bottom: 270px;
+        left: -280px;
+    }
+
+    .option-right-item_2{
+        top: 580px;
+        left: -230px;
+    }
+
+    .option-right-item_3{
+        bottom: -90px;
+        left: -70px;
+    }
+
+    .option-right-item_4{
+        bottom: -140px;
+        left: 150px;
+    }
+
+    .option-section-content-right {
+        top: 260px;
+        right: 490px;
+    }
 }
 
 @media(max-width:1198.99px){
     .option-section-container{
         width: 600px;
-        height: 1800px;
+        height: 1350px;
         display: flex;
         align-items: end;
     }
     .option-img-left-wrap{
         display: none;
     }
-    .option-background-right{
-        display: none;
+    .option-background-right {
+        top: 230px;
+        right: -190px;
     }
-    .option-img-right{
-        display: none;
+    .option-img-right {
+        top: 210px;
+        right: 0px;
     }
     .option-background-left{
         display: none;
@@ -315,7 +354,7 @@ top: 570px;
     }
 
     .option-section-content-left {
-        top: -1700px;
+        top: -1370px;
         left: 20px;
     }
     .option-title-left {
@@ -335,57 +374,61 @@ top: 570px;
         width: 516px;
     }
     .option-section-content-right {
-        top: 750px;
-        right: 100px;
+        top: 700px;
+        right: 200px;
     }
     .option-right-item_1 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: -100px;
-    left: 0px;
+    top: 25px;
+    left: -100px;
     }
     .option-right-item_2 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: -100px;
-    left: 200px;
+    top: 25px;
+    left: 100px;
     }
     .option-right-item_3 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: -100px;
-    left: 400px;
+    top: 25px;
+    left: 300px;
     }
     .option-right-item_4 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: 75px;
-    left: 300px;
+    top: 200px;
+    left: 200px;
     }
     .option-right-item_5 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: 75px;
-    left: 100px;
+    top: 200px;
+    left: 0px;
     }
 }
 
 @media(max-width:599.99px){
     .option-section-container{
         width: 374px;
-        height: 1184px;
+        height: 1000px;
     }
 
     
-    .option-img-rep{
-        display: block;
-        width: 374px;
+    .option-img-right {
+        top: 350px;
+        right: -160px;
+    }
 
+    .option-background-right {
+        top: 350px;
+        right: -340px;
     }
     .option-section-content-right{
         display: flex;
@@ -402,7 +445,7 @@ top: 570px;
     }
 
     .option-section-content-left {
-        top: -1150px;
+        top: -1000px;
         left: 14px;
     }
     .option-title-left {
@@ -421,43 +464,43 @@ top: 570px;
         width: 350px;
     }
     .option-section-content-right {
-        top: 350px;
-        right: 5px;
+        top: 700px;
+        right: 72px;
     }
     .option-right-item_1 {
     width: 110px    ;
     height: 110px   ;
     border-radius: 50%;
-    top: -30px ;
-    left: 20px;
+    top: 300px;
+    left: -50px;
     }
     .option-right-item_2 {
     width: 110px    ;
     height: 110px   ;
     border-radius: 50%;
-    top: -30px ;
-    left: 130px ;
+    top: 300px;
+    left: 65px;
     }
     .option-right-item_3 {
     width: 110px    ;
     height: 110px   ;
     border-radius: 50%;
-    top: -30px ;
-    left: 240px;
+    top: 300px;
+    left: 175px;
     }
     .option-right-item_4 {
     width: 110px    ;
     height: 110px   ;
     border-radius: 50%;
-    top: 68px;
-    left: 75px;
+    top: 400px;
+    left: 10px;
     }
     .option-right-item_5 {
     width: 110px    ;
     height: 110px   ;
     border-radius: 50%;
-    top: 68px;
-    left: 185px;
+    top: 400px;
+    left: 125px;
     }
 
 }

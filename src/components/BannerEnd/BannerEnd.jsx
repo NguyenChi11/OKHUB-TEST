@@ -2,9 +2,22 @@ import React from 'react'
 import "./BannerEnd.css"
 import { assets } from '../../assets/assets'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const BannerEnd = () => {
+
+        useEffect(() => {
+            AOS.init({
+              duration: 1000,  
+              once: true,     
+            });
+          }, []);
   return (
-    <div className='bannerEnd-container-wrap'>
+    <div className='bannerEnd-container-wrap' data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <img className='bannerEnd-image' src={assets.banner_end} alt="" />
         <div className='bannerEnd-content'>
             <div className='BannerEnd-title-heading'>

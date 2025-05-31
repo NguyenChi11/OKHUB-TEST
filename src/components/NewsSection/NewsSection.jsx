@@ -2,24 +2,39 @@ import React, { useState } from 'react';
 import "./NewsSection.css"
 import { assets } from '../../assets/assets'
 import { newsItems } from "../../assets/newsItem"
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+
+import '@splidejs/react-splide/css';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const NewsSection = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const itemsPerPage = 3;
 
-    const handlePrev = () => {
-        setCurrentIndex((prev) => Math.max(prev - 1, 0));
-    };
+        useEffect(() => {
+            AOS.init({
+              duration: 1000,  
+              once: true,     
+            });
+          }, []);
+    // const [currentIndex, setCurrentIndex] = useState(0);
+    // const itemsPerPage = 3;
 
-    const handleNext = () => {
-        if (currentIndex + itemsPerPage < newsItems.length) {
-            setCurrentIndex((prev) => prev + 1);
-        }
-    };
+    // const handlePrev = () => {
+    //     setCurrentIndex((prev) => Math.max(prev - 1, 0));
+    // };
 
-    const visibleItems = newsItems.slice(currentIndex, currentIndex + itemsPerPage);
+    // const handleNext = () => {
+    //     if (currentIndex + itemsPerPage < newsItems.length) {
+    //         setCurrentIndex((prev) => prev + 1);
+    //     }
+    // };
+
+    // const visibleItems = newsItems.slice(currentIndex, currentIndex + itemsPerPage);
   return (
-    <div className='NewsSection-container-wrap'>
+    <div className='NewsSection-container-wrap' data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
       <div className='NewsSection-container'>
         <div className='NewsSection-fame-1'>
           <img src={assets.fame1} alt="" />
@@ -43,7 +58,7 @@ const NewsSection = () => {
             </div>
           </div>
           <div className='NewsSection-item-list-wrap'>
-            <img className='News-arr-left' src={assets.arr_left} alt=""  onClick={handlePrev}/>
+            {/* <img className='News-arr-left' src={assets.arr_left} alt=""  onClick={handlePrev}/>
             <div className='News-items'>{visibleItems.map((item,index)=>(
               <div className='News-item' key={index}>
                 <div className='News-item-image-wrap'>
@@ -56,8 +71,37 @@ const NewsSection = () => {
                 <p className='News-item-tag'>Nổi Bật</p>
               </div>
             ))}</div>
-            <img className='News-arr-right' src={assets.arr_right} alt="" onClick={handleNext}/>
+            <img className='News-arr-right' src={assets.arr_right} alt="" onClick={handleNext}/> */}
+            <Splide 
+              options={{    type   : 'loop',
+                            perPage: 3,
+                            focus  : 'center',
+                            gap: '20px',
+                            // width: 1100,
+                            pagination: false,
+                        }}
+              aria-label="My Splide Slider">
+                {newsItems.map((item, index) => (
+                  <SplideSlide key={index}>
+                    <div className='News-item' key={index}>
+                      <div className='News-item-image-wrap'>
+                        <img src={item.image} className='News-item-image' alt="" />
+                      </div>
+                      <div className='News-title-content-wrap'>
+                        <h3 className='News-item-title'>{item.title}</h3>
+                        <p className='News-paragraph-rps'>{item.paragraph}</p>
+                        <div className='News-date-extend'>
+                          <p className='News-item-date'>{item.date}</p>
+                          <p className='News-extend'>Đọc thêm</p>
+                        </div>
+                      </div>
+                      <p className='News-item-tag'>Nổi Bật</p>
+                    </div>
+                  </SplideSlide>
+                ))}
+            </Splide>
           </div>
+          <button className='News-btn-rps'>Xem Tất Cả</button>
         </div>
       </div>
     </div>

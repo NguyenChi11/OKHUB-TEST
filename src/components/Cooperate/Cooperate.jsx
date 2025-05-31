@@ -3,9 +3,20 @@ import "./Cooperate.css"
 import { assets } from '../../assets/assets'
 import { characters } from '../../assets/assets'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 
     const Cooperate = () => {
+
+              useEffect(() => {
+                  AOS.init({
+                    duration: 1000,  
+                    once: true,     
+                  });
+                }, []);
         const [selectedCharacter, setSelectedCharacter] = useState(characters[0]);
 
         const handleChange = (event) => {
@@ -20,7 +31,8 @@ import { characters } from '../../assets/assets'
 
 
         return (
-        <div className='cooperate-container'>
+        <div className='cooperate-container' data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
             <div className='cooperate'>
                 <div className='cooperate-background'>
                     <div className='cooperate-bgr-left'>

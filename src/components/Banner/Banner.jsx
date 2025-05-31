@@ -3,13 +3,26 @@ import { useState } from 'react';
 import "./Banner.css";
 import { assets } from "../../assets/assets.js";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
+
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,  
+          once: true,     
+        });
+      }, []);
+
     const [selectedLanguage, setSelectedLanguage] = useState('VIE');
     const handleLanguageChange = (language) => {
         setSelectedLanguage(language);
     };
   return (
-    <div className='banner'>
+    <div className='banner' data-aos="fade-up-right">
         <div className='banner-content'>
             <div className='banner-logo'>
                 <img className='banner-logo-image' src={assets.logo} alt="Logo AMI&M"/>
