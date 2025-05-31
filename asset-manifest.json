@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/OKHUB-TEST/static/css/main.ddc33808.css",
+    "main.js": "/OKHUB-TEST/static/js/main.d947d2c2.js",
+    "static/js/453.8ab44547.chunk.js": "/OKHUB-TEST/static/js/453.8ab44547.chunk.js",
+    "static/media/image-slide.png": "/OKHUB-TEST/static/media/image-slide.b198506356f09122dd3f.png",
+    "static/media/IMG_0875.JPG": "/OKHUB-TEST/static/media/IMG_0875.e0ebb3ac663bb94417d5.JPG",
+    "static/media/IMG_0878.JPG": "/OKHUB-TEST/static/media/IMG_0878.b10a206a22b8bc15133d.JPG",
+    "static/media/banner.png": "/OKHUB-TEST/static/media/banner.d5f89bb9e4915215ce34.png",
+    "static/media/banner1.png": "/OKHUB-TEST/static/media/banner1.984fdc729cf7e41e4068.png",
+    "static/media/BannerEnd.png": "/OKHUB-TEST/static/media/BannerEnd.7be92085787c503bb057.png",
+    "static/media/cooperate1.png": "/OKHUB-TEST/static/media/cooperate1.166d67a638e224b3121b.png",
+    "static/media/AboutSection.png": "/OKHUB-TEST/static/media/AboutSection.7d1363f3de81e9d4bb67.png",
+    "static/media/img-option-left.png": "/OKHUB-TEST/static/media/img-option-left.bac9926406f3026a091a.png",
+    "static/media/backgroud-option-left.png": "/OKHUB-TEST/static/media/backgroud-option-left.37b54facc4f3e083709f.png",
+    "static/media/backgroud-option-right.png": "/OKHUB-TEST/static/media/backgroud-option-right.532f39a5559a32af15f5.png",
+    "static/media/layout.png": "/OKHUB-TEST/static/media/layout.42e01c7a34f50fc15f34.png",
+    "static/media/item.png": "/OKHUB-TEST/static/media/item.01210ab38f2fffac4d8f.png",
+    "static/media/AboutSection-rep.png": "/OKHUB-TEST/static/media/AboutSection-rep.4e69162f48737f282eec.png",
+    "static/media/global.png": "/OKHUB-TEST/static/media/global.6d9f248ad1cca551e387.png",
+    "static/media/NewsItem.png": "/OKHUB-TEST/static/media/NewsItem.641820a9753a704d454d.png",
+    "static/media/Ellipse-left.png": "/OKHUB-TEST/static/media/Ellipse-left.b9f83ec31eec06a81b4f.png",
+    "static/media/Option-rep.png": "/OKHUB-TEST/static/media/Option-rep.17dc268bd85f716aac57.png",
+    "static/media/bgr-cooperate.png": "/OKHUB-TEST/static/media/bgr-cooperate.ac191e85401f56950823.png",
+    "static/media/Ellipse-right.png": "/OKHUB-TEST/static/media/Ellipse-right.e0d41883caf2e7de91db.png",
+    "static/media/VectorAboutSection.png": "/OKHUB-TEST/static/media/VectorAboutSection.6e0bb71bd2f14ab3669d.png",
+    "static/media/Fame-1.png": "/OKHUB-TEST/static/media/Fame-1.6ddefa5c8b2ea393865b.png",
+    "static/media/backgroundBannerEnd.png": "/OKHUB-TEST/static/media/backgroundBannerEnd.81147b8cace5b0a1c68f.png",
+    "static/media/Union.png": "/OKHUB-TEST/static/media/Union.debada3ff33c48687812.png",
+    "static/media/Fame-2.png": "/OKHUB-TEST/static/media/Fame-2.22c2f14582340250dad1.png",
+    "static/media/icon-item6.png": "/OKHUB-TEST/static/media/icon-item6.858261e766af819f461c.png",
+    "index.html": "/OKHUB-TEST/index.html",
+    "main.ddc33808.css.map": "/OKHUB-TEST/static/css/main.ddc33808.css.map",
+    "main.d947d2c2.js.map": "/OKHUB-TEST/static/js/main.d947d2c2.js.map",
+    "453.8ab44547.chunk.js.map": "/OKHUB-TEST/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddc33808.css",
+    "static/js/main.d947d2c2.js"
+  ]
+}
