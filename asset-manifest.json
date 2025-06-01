@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OKHUB-TEST/static/css/main.30c5efb0.css",
-    "main.js": "/OKHUB-TEST/static/js/main.86c3c9c2.js",
+    "main.css": "/OKHUB-TEST/static/css/main.32517671.css",
+    "main.js": "/OKHUB-TEST/static/js/main.af30d4ad.js",
     "static/js/453.8ab44547.chunk.js": "/OKHUB-TEST/static/js/453.8ab44547.chunk.js",
     "static/media/image-slide.png": "/OKHUB-TEST/static/media/image-slide.b198506356f09122dd3f.png",
     "static/media/IMG_0875.JPG": "/OKHUB-TEST/static/media/IMG_0875.e0ebb3ac663bb94417d5.JPG",
@@ -40,12 +40,12 @@
     "static/media/Fame-2.png": "/OKHUB-TEST/static/media/Fame-2.22c2f14582340250dad1.png",
     "static/media/Doi-tac_RMA.webp": "/OKHUB-TEST/static/media/Doi-tac_RMA.1e12b7441c1d4e9e9b07.webp",
     "index.html": "/OKHUB-TEST/index.html",
-    "main.30c5efb0.css.map": "/OKHUB-TEST/static/css/main.30c5efb0.css.map",
-    "main.86c3c9c2.js.map": "/OKHUB-TEST/static/js/main.86c3c9c2.js.map",
+    "main.32517671.css.map": "/OKHUB-TEST/static/css/main.32517671.css.map",
+    "main.af30d4ad.js.map": "/OKHUB-TEST/static/js/main.af30d4ad.js.map",
     "453.8ab44547.chunk.js.map": "/OKHUB-TEST/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30c5efb0.css",
-    "static/js/main.86c3c9c2.js"
+    "static/css/main.32517671.css",
+    "static/js/main.af30d4ad.js"
   ]
 }
