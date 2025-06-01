@@ -41,6 +41,8 @@
     align-items: center;
     justify-content: center;
     gap: 90px;
+    top: 10px;
+    left: 100px;
 }
 .NewsSection-content-wrap{
     margin-left: 90px;
@@ -144,8 +146,9 @@
 }
 
 
-.News-item-image-wrap{
-    height: 440px ;
+.News-item-image-wrap {
+    height: 490px;
+    width: 401px;
 }
 
 .News-item-image{
@@ -193,7 +196,7 @@
 }
 
 .splide {
-  max-width: 1100px;
+  max-width: 1240px;
 }
 
 .News-extend{
@@ -213,6 +216,12 @@
         width: 1180px;
         height: 100%;
         margin-bottom: 28px;
+
+    }
+
+    .NewsSection-content-container{
+        top: 0;
+        left: 0;
     }
     .News-item-image{
         max-width: 100%;

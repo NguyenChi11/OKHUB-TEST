@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react';
 import "./Mission.css";
 import { assets } from '../../assets/assets';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { missionItem } from '../../assets/mission';
+
 
 const Mission = () => {
   useEffect(() => {
@@ -12,6 +13,36 @@ const Mission = () => {
               once: true,     
             });
           }, []);
+
+  const contentRefs = useRef([]);
+  const [visibleIndex, setVisibleIndex] = useState(null);
+
+  useEffect(() => {
+    const observers = contentRefs.current.map((ref, index) => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              setVisibleIndex(index);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      if (ref) observer.observe(ref);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer, index) => {
+        if (contentRefs.current[index]) {
+          observer.unobserve(contentRefs.current[index]);
+        }
+      });
+    };
+  }, []);
+
   return (
     <div className='mission-container' data-aos="fade-up"
      data-aos-duration="3000">
@@ -29,7 +60,29 @@ const Mission = () => {
             </div>
       </div>
       <div className='mission-content'> 
-        <div className='mission-icon-content'>
+        <div  className='mission-icon-content mission-left'>
+          {missionItem.map((item,index)=>(
+            <div key={index} className='mission-icon-wrap' ref={(el) => (contentRefs.current[index] = el)}>
+              <div className='mission-icon-item'>
+                <img className='mission-icon-img' src={item.image_icon} alt="" />
+                <h3 className='mission-icon-title'>{item.mission_title}</h3>
+                <p className='mission-icon-paragraph'>{item.mission_icon_paragraph}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div  className='mission-icon-content mission-right'>
+          {missionItem.map((item,index)=>(
+              <div key={index} className={`mission-img-wrap ${
+              visibleIndex === index ? 'show' : ''
+            }`}>
+                <img className='mission-img-item' src={item.image_item} alt="" />
+              </div>
+          ))}
+        </div>
+        
+
+        {/* <div className='mission-icon-content'>
             <div className='mission-icon-wrap'>
                 <div className='mission-icon-item'>
                     <img className='mission-icon-img' src={assets.icon_1} alt="" />
@@ -55,7 +108,7 @@ const Mission = () => {
             <div className='mission-img-wrap'>
                 <img className='mission-img-item' src={assets.Item} alt="" />
             </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

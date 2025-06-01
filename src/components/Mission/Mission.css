@@ -4,7 +4,7 @@
     justify-content: center;
     margin-top: 30px;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .img-union{
     height: 176px;
@@ -44,21 +44,25 @@
     
 }
 .mission-content{
+    display: flex;
     margin-top: 88px;
 }
 
+
 .mission-icon-content{
     display: flex;
+    flex-direction: column;
     align-items: start;
     justify-content:start;
     margin-left: 120px;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
+
 }
 .mission-icon-item{
     width: 415px;
-    margin: 85px 125px 124px 0;;
+    margin: 85px 0px 0px 0;;
 }
 
 .mission-icon-img{
@@ -75,9 +79,33 @@
 .mission-icon-paragraph{
     color: #000000;
     width: 379px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 }
 
+.mission-icon-wrap{    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mission-img-item{
+    width: 734px;
+    height: 492px;
+    border-radius: 24px;
+}
+
+
+.mission-img-wrap {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.mission-img-wrap.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 @media(max-width:1598.99px){
     .img-union{
@@ -89,7 +117,10 @@
         margin: 50px 0px 50px 0;
     }
     .mission-img-item{
-        max-width: 80%;
+        max-width: 100%;
+    }
+    .mission-icon-content{
+        margin-left: 0;
     }
 }
 
@@ -112,8 +143,11 @@
     }
     .mission-content {
         margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
     }
-    .mission-img-item{
+    .mission-img-item {
+        height: auto;
         max-width: 100%;
     }
     .mission-icon-content{
